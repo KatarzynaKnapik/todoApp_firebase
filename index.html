@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <h1>Todos</h1>
+    <div class="content">
+        <form id="add-new-todo">
+            <input type="text" name="todo" placeholder="Add todo">
+            <button>Add todo</button>
+        </form>
+
+        <ul class="todos"></ul>
+
+
+    </div>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_O04OaZPUq5dAmEWMNhs5cB8rwBCtd6U",
+    authDomain: "todo-7023c.firebaseapp.com",
+    databaseURL: "https://todo-7023c.firebaseio.com",
+    projectId: "todo-7023c",
+    storageBucket: "todo-7023c.appspot.com",
+    messagingSenderId: "299284006304",
+    appId: "1:299284006304:web:8002fb706d5f690a29d0c5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
